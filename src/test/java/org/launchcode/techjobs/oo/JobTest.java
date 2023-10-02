@@ -32,8 +32,36 @@ public class JobTest {
         Job job1 = new Job("Data analyst", new Employer("Antic"), new Location("NY"), new PositionType("Full-time"), new CoreCompetency("Java"));
         Job job2 = new Job("Data analyst", new Employer("Antic"), new Location("NY"), new PositionType("Full-time"), new CoreCompetency("Java"));
         assertFalse(job1.equals(job2));
+
+
+    }
+
+    @Test
+    public void testToStringContainsBlankLinesAndFieldLabelsWithData() {
+        Job job = new Job("Data analyst", new Employer("Antic"), new Location("NY"), new PositionType("Full-time"), new CoreCompetency("Java"));
+        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: Data analyst" + System.lineSeparator() + "Employer: Antic" + System.lineSeparator() + "Location: NY" + System.lineSeparator() + "PositionType: Full-time" + System.lineSeparator() + "CoreCompetency: Java" + System.lineSeparator();
+        assertEquals(expected, job.toString());
+    }
+    public void testToStringContainsCorrectLabelsAndData(){
+        Job job = new Job("Data analyst", new Employer("Antic"), new Location("NY"), new PositionType("Full-time"), new CoreCompetency("Java"));
+        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: Data analyst" + System.lineSeparator() + "Employer: Antic" + System.lineSeparator() + "Location: NY" + System.lineSeparator() + "PositionType: Full-time" + System.lineSeparator() + "CoreCompetency: Java" + System.lineSeparator();
+        assertEquals(expected, job.toString());
+    }
+
+    @Test
+    public void testToStringHandlesEmptyField() {
+        Job job = new Job("", new Employer("Google"), new Location("ST.LOUIS"), new PositionType(""), new CoreCompetency("React"));
+        String expected = System.lineSeparator() +
+                "ID: " + job.getId() +System.lineSeparator() +
+                "Name: Data not available"+System.lineSeparator() +
+                "Employer: Google"+System.lineSeparator() +
+                "Location: ST.LOUIS"+System.lineSeparator() +
+                "PositionType: Data not available"+System.lineSeparator() +
+                "CoreCompetency: React"+ System.lineSeparator();
+        assertEquals(expected, job.toString());
     }
 }
+
 
 
 

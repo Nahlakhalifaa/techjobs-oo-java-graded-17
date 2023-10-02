@@ -93,4 +93,21 @@ public class Job {
     public void setEmployer(Employer employer) {
         this.employer = employer;
     }
+
+    @Override
+    public String toString() {
+        String Name = (name.isEmpty()) ? "Data not available" : name;
+        String Employer = (employer == null || employer.getValue().isEmpty()) ? "Data not available" : employer.getValue();
+        String Location = (location == null || location.getValue().isEmpty()) ? "Data not available" : location.getValue();
+        String PositionType = (positionType == null || positionType.getValue().isEmpty()) ? "Data not available" : positionType.getValue();
+        String CoreCompetency = (coreCompetency == null || coreCompetency.getValue().isEmpty()) ? "Data not available" : coreCompetency.getValue();
+        String job =System.lineSeparator()+"ID: " + getId() + System.lineSeparator()+
+                "Name: "+Name+ System.lineSeparator()+
+                "Employer: "+Employer+ System.lineSeparator()+
+                "Location: "+Location+ System.lineSeparator()+
+                "PositionType: " + PositionType + System.lineSeparator() +
+                "CoreCompetency: " + CoreCompetency + System.lineSeparator();
+        return
+                job;
+    }
 }
