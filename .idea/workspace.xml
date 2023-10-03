@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment=" testing JOB Class.">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment=" testing Tostring method.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +58,7 @@
       <recent name="org.launchcode.techjobs.oo" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.JobTest.testToStringHandlesEmptyField">
+  <component name="RunManager" selected="Gradle.JobTest">
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -198,11 +201,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
+        <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.JobTest.testToStringContainsBlankLinesAndFieldLabelsWithData" />
+        <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
         <item itemvalue="Gradle.JobTest.testJobsForEquality" />
         <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
-        <item itemvalue="Gradle.JobTest" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696192847792</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" testing Tostring method.">
+      <option name="closed" value="true" />
+      <created>1696268685459</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696268685459</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -255,21 +266,7 @@
     <MESSAGE value="added some methods." />
     <MESSAGE value="added JOB Class." />
     <MESSAGE value=" testing JOB Class." />
-    <option name="LAST_COMMIT_MESSAGE" value=" testing JOB Class." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>51</line>
-          <properties class="org.launchcode.techjobs.oo.JobTest" method="testToStringHandlesEmptyField">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value=" testing Tostring method." />
+    <option name="LAST_COMMIT_MESSAGE" value=" testing Tostring method." />
   </component>
 </project>
