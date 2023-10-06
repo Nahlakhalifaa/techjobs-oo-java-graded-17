@@ -19,7 +19,19 @@ public class TestTaskFive extends AbstractTest {
 
     @Mocked Job job;
     @Test
-    public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public void testTestToStringStartsAndEndsWithNewLineExists () throws ClassNotFoundException {
+        Class jobTestClass = getClassByName("JobTest");
+        Method testToStringStartsAndEndsWithNewLineMethod = null;
+
+        try {
+            testToStringStartsAndEndsWithNewLineMethod = jobTestClass.getMethod("testToStringStartsAndEndsWithNewLine");
+        } catch (NoSuchMethodException e) {
+            fail("JobTest does not have a testToStringStartsAndEndsWithNewLine method");
+        }
+    }
+    @Test
+    public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException,
+            NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");
         String jabString =job.toString();
         assertTrue(jabString.startsWith(lineSeparator()));
