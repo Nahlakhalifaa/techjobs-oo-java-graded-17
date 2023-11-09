@@ -38,7 +38,7 @@ public class JobTest {
     @Test
     public void testToStringStartsAndEndsWithNewLine(){
         Job job = new Job("Data analyst", new Employer("Antic"), new Location("NY"), new PositionType("Full-time"), new CoreCompetency("Java"));
-        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: Data analyst" + System.lineSeparator() + "Employer: Antic" + System.lineSeparator() + "Location: NY" + System.lineSeparator() + "PositionType: Full-time" + System.lineSeparator() + "CoreCompetency: Java" + System.lineSeparator();
+        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: Data analyst" + System.lineSeparator() + "Employer: Antic" + System.lineSeparator() + "Location: NY" + System.lineSeparator() + "Position Type: Full-time" + System.lineSeparator() + "Core Competency: Java" + System.lineSeparator();
         assertEquals(expected, job.toString());
 
     }
@@ -46,7 +46,7 @@ public class JobTest {
     @Test
     public void testToStringContainsBlankLinesAndFieldLabelsWithData() {
         Job job = new Job("Data analyst", new Employer("Antic"), new Location("NY"), new PositionType("Full-time"), new CoreCompetency("Java"));
-        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: Data analyst" + System.lineSeparator() + "Employer: Antic" + System.lineSeparator() + "Location: NY" + System.lineSeparator() + "PositionType: Full-time" + System.lineSeparator() + "CoreCompetency: Java" + System.lineSeparator();
+        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() + "Name: Data analyst" + System.lineSeparator() + "Employer: Antic" + System.lineSeparator() + "Location: NY" + System.lineSeparator() + "Position Type: Full-time" + System.lineSeparator() + "Core Competency: Java" + System.lineSeparator();
         assertEquals(expected, job.toString());
     }
     @Test
@@ -57,8 +57,8 @@ public class JobTest {
                 "Name: Data analyst" + System.lineSeparator() +
                 "Employer: Antic" + System.lineSeparator() +
                 "Location: NY" + System.lineSeparator() +
-                "PositionType: Full-time" + System.lineSeparator() +
-                "CoreCompetency: Java" + System.lineSeparator();
+                "Position Type: Full-time" + System.lineSeparator() +
+                "Core Competency: Java" + System.lineSeparator();
 
         assertEquals(expected, job.toString());
     }
@@ -71,8 +71,8 @@ public class JobTest {
                 "Name: Data not available"+System.lineSeparator() +
                 "Employer: Google"+System.lineSeparator() +
                 "Location: ST.LOUIS"+System.lineSeparator() +
-                "PositionType: Data not available"+System.lineSeparator() +
-                "CoreCompetency: React"+ System.lineSeparator();
+                "Position Type: Data not available"+System.lineSeparator() +
+                "Core Competency: React"+ System.lineSeparator();
         assertEquals(expected, job.toString());
     }
 }

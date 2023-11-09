@@ -105,8 +105,8 @@ public class Job {
                 "Name: "+Name+ System.lineSeparator()+
                 "Employer: "+Employer+ System.lineSeparator()+
                 "Location: "+Location+ System.lineSeparator()+
-                "PositionType: " + PositionType + System.lineSeparator() +
-                "CoreCompetency: " + CoreCompetency + System.lineSeparator();
+                "Position Type: " + PositionType + System.lineSeparator() +
+                "Core Competency: " + CoreCompetency + System.lineSeparator();
         return
                 job;
     }
